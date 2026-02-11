@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import questionsData from './questions.json';
 
 const App = () => {
-  const [step, setStep] = useState('intro'); // 'intro', 'quiz', 'result'
+  const [step, setStep] = useState('intro');
   const [answers, setAnswers] = useState(Array(25).fill(3));
   const [currentQuestion, setCurrentQuestion] = useState(0);
 
@@ -67,7 +67,6 @@ const App = () => {
       if (value < 2.5) return "较高 → 能自然地信任与依赖他人";
       return "中等 → 在亲密与独立间寻找平衡";
     }
-    // 其他维度简化处理...
     return value > 3.5 ? "较强" : value < 2.5 ? "较弱" : "中等";
   };
 
@@ -94,39 +93,4 @@ const App = () => {
           <button key={score} onClick={() => handleAnswer(score)}
             style={{ display: 'block', width: '100%', padding: '10px', margin: '5px 0', fontSize: '16px' }}>
             {score === 1 ? '完全不符合' : 
-             score === 2 ? '不太符合' :
-             score === 3 ? '一般' :
-             score === 4 ? '比较符合' : '非常符合'}
-          </button>
-        ))}
-      </div>
-    );
-  }
-
-  if (step === 'result') {
-    const results = calculateResults();
-    return (
-      <div style={{ padding: '20px', maxWidth: '600px', margin: '0 auto' }}>
-        <h1>你的恋爱成熟度报告</h1>
-        <p><strong>依恋安全感：</strong>{getResultText(results.attachment, 'attachment')}</p>
-        <p><strong>情绪调节力：</strong>{getResultText(results.emotion)}</p>
-        <p><strong>自尊水平：</strong>{getResultText(results.esteem)}</p>
-        <p><strong>情绪稳定性：</strong>{getResultText(results.neuroticism)}</p>
-        <p><strong>亲密恐惧：</strong>{getResultText(results.intimacyFear)}</p>
-        
-        <h2>💡 成长建议</h2>
-        <ul>
-          <li>阅读《亲密关系》（罗兰·米勒）第4章</li>
-          <li>练习“我感到...因为...”的非暴力沟通句式</li>
-          <li>若长期焦虑，可拨打心理援助热线：400-161-9995</li>
-        </ul>
-
-        <div style={{ marginTop: '30px', fontSize: '14px', color: '#666', padding: '15px', backgroundColor: '#f9f9f9' }}>
-          <p><strong>免责声明：</strong>本测试基于公开心理学研究编制，不构成临床诊断或治疗建议。本网站不收集个人身份信息，符合《个人信息保护法》。</p>
-        </div>
-      </div>
-    );
-  }
-};
-
-export default App;
+             score =
