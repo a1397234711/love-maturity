@@ -16,12 +16,4 @@
   {"id":15,"text":"我认为恋爱最重要的是彼此信任、互相支持，像最好的朋友一样。","dimension":"storge","reverse":false},
   {"id":16,"text":"我享受同时和多人保持暧昧的感觉。","dimension":"ludus","reverse":false},
   {"id":17,"text":"一见钟情对我很重要，没有强烈心动就不算爱。","dimension":"eros","reverse":false},
-  {"id":18,"text":"我害怕一旦让别人真正了解我，他们就会离开我。","dimension":"fear_intimacy","reverse":false},
-  {"id":19,"text":"我觉得在感情中保持一点距离更安全。","dimension":"fear_intimacy","reverse":false},
-  {"id":20,"text":"被人完全接纳和理解，对我来说既渴望又有点害怕。","dimension":"fear_intimacy","reverse":false},
-  {"id":21,"text":"当我和伴侣意见不合时，我会主动沟通，寻找双方都能接受的办法。","dimension":"constructive","reverse":false},
-  {"id":22,"text":"我宁愿冷战几天，也不想吵架。","dimension":"avoidant","reverse":false},
-  {"id":23,"text":"我觉得吵架是破坏感情的，所以尽量避免表达不满。","dimension":"avoidant","reverse":false},
-  {"id":24,"text":"即使情绪激动，我也能尊重对方的观点。","dimension":"respectful","reverse":false},
-  {"id":25,"text":"有时候为了不伤感情，我会隐藏自己的真实想法。","dimension":"sacrifice","reverse":false}
-]
+  {"id":18,"text":"我害怕一旦让别人真正了解我，他们就会离开我
